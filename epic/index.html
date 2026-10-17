@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Engram sign-in</title>
+<style>body{font:16px -apple-system,system-ui,sans-serif;margin:20vh auto;max-width:28em;padding:0 16px;color:#333;background:#fafafa}@media(prefers-color-scheme:dark){body{color:#ddd;background:#1c1c1e}}</style>
+<p id="m">Returning to Engram on your Mac…</p>
+<script>
+// Hands MyChart's answer to the Engram Engine waiting on this computer. Nothing is stored or sent anywhere else.
+var q = location.search;
+if (q) { location.replace("http://127.0.0.1:53682/" + q); }
+else { document.getElementById("m").textContent = "Nothing to hand over. Start the MyChart sign-in from Engram."; }
+</script>
